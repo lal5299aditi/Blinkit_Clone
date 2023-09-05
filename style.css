@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    font-family: 'Okra', Helvetica;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Animation */
+/* animation in search icon in navbar */
+.blink{
+    animation: aditi 0.5s linear 0s infinite alternate;
+}
+@keyframes aditi{
+    0%{
+        color: rgb(174, 173, 173);
+    }
+    100%{
+        color: rgb(38, 37, 37);
+    }
+}
+/* animation in delivery-location dropdown icon in navbar */
+.size-blink{
+    animation: mandy 0.8s linear 0s infinite alternate;
+}
+@keyframes mandy{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.4);
+    }
+}
+.shake-hover:hover{
+    animation: nina 4s linear 0s 1;
+}
+.shake{
+    animation: nina 1.5s linear 0s infinite;
+}
+@keyframes nina{
+    /* Made by dobrev */
+    0%{
+        transform: rotate(-20deg);
+    }
+    6%{
+        transform: rotate(20deg);
+    }
+    12%{
+        transform: rotate(-20deg);
+    }
+    18%{
+        transform: rotate(20deg);
+    }
+    24%{
+        transform: rotate(-20deg);
+    }
+    30%{
+        transform: rotate(20deg);
+    }
+    36%{
+        transform: rotate(-20deg);
+    }
+    42%, 100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* Navbar */
+.navigationbar{
+    display: flex;
+    padding: 0 33px 0 23px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0 1px 4px rgb(232, 231, 231);
+    background-color: white;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.vertical-line{
+    padding: 26px 23px 26px 0;
+    border-right: 1px solid #f2f2f2;
+}
+
+.d-time{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.city{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+.location {
+    cursor: pointer;
+}
+.location-dropdown{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0px 12px;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+}
+.search-icon{
+    padding-inline: 5px;
+}
+/* category - search - div - Jennifer */
+.search-div>input{
+    padding-inline: 5px;
+    border: none;
+    background-color: transparent;
+    width: 42vw;
+    height: 45px;
+}
+::placeholder{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.nav-btn{
+    font-size: 18px;
+    padding: 18px 10px;
+    border-radius: 5px;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+.my-cart{
+    background-color: #0d831e;
+    color: white;
+}
+.my-cart:hover{
+    opacity: 0.8;
+}
+.my-cart-icon{
+    padding-right: 5px;
+}
+.login{
+    color: gray;
+}
+.login-icon{
+    display: none;
+}
+.login:hover{
+    color: black;
+}
+/* Navbar */
+
+
+/* Scrollbar Design */
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 0px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(230, 229, 229); 
+    border-radius: 10px;
+    opacity: 0.5;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+    opacity: 0.5;
+}
+/* Scrollbar Design */
+
+
+/* All divition center */
+.div-center-1{
+    width: 84.3%;
+    margin-inline: auto;
+}
+.div-center-2{
+    width: 82.2%;
+    margin-inline: auto;
+}
+.div-center-3{
+    width: 84.3%;
+    margin-inline: auto;
+}
+/* All division center */
+
+/* developed - by - items- list - elena */
+
+/* Scrollable Banner */
+.scroll-banner{
+    margin-top: 10px;
+    display: flex;
+    overflow-x: scroll;
+}
+.scroll-banner> a{
+    cursor: default;
+}
+.scroll-banner> a> img{
+    width: 303.5px;
+}
+.scroll-banner :nth-child(n+2){
+    margin-left: 15px;
+}
+/* Scrollable Banner */
+
+
+/* Category */
+.categories{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* border: 1px solid black; */
+}
+.category img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Category */
+
+
+/* catagory-1 */
+.product-list{
+    margin-top: 30px;
+}
+.category-1-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0px 10px;
+    margin-bottom: 10px;
+}
+.category-1-header a{
+    font-size: 1.3rem;
+    color: #0d831e;
+}
+.category-1-container{
+    padding-inline: 5px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+.category-1-container> :nth-child(n+2){
+    margin-left: 12px;
+}
+.card{
+    flex: 0 0;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 0 13px 13px;
+    min-width: 11.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    box-shadow: 0 0 5px rgb(215, 215, 215);
+    transition: all 0.6s linear 0s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 5px rgb(90, 65, 214);
+}
+.offer-img{
+    position: absolute;
+}
+.offer{
+    width: 27px;
+    height: 26px;
+    font-size: 9px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 2px;
+}
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* designed by lal */
+
+.card a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+.card a *{
+    color: black;
+    font-weight: bold;
+}
+.card>a> :nth-child(n+2){
+    margin-top: 8px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    width: fit-content;
+    border-radius: 8px;
+    padding: 3px 5px;
+}
+.timer img{
+    height: 15px;
+    margin-right: 4px;
+}
+.timer p{
+    font-size: 9px;
+    height: 8px;
+    letter-spacing: 0px;
+}
+.card>a>h5{
+    height: 50px;
+    line-height: 12px;
+    font-size: 0.75rem;
+}
+.weight{
+    color: rgb(106, 105, 105)!important;
+    font-size: 11px;
+    font-weight: 100!important;
+}
+.card-foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price--box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    font-size: 11px;
+}
+.price-old{
+    color: rgb(106, 105, 105)!important;
+    font-size: 11px;
+    font-weight: 100!important;
+    text-decoration: line-through;
+}
+.btn-outline-green{
+    border: 1px solid #0d831e;
+    color: #0d831e!important;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    padding: 8px 17px;
+    background-color: rgb(243, 252, 235);
+}
+.btn-outline-green:hover{
+    background-color: #0d831e!important;
+    color: white!important;
+    cursor: pointer;
+}
+/* made by aditi */
+
+/* Footer */
+.foot{
+    margin-top: 80px;
+}
+
+
+.foot-top{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 60px;
+}
+.right>h3>a{
+    color: rgb(88, 154, 88);
+    margin-left: 13px;
+}
+.table-div h3{
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+.foot-table{
+    width: 100%;
+}
+.foot-table>tbody>tr>td{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.foot-table>tbody>tr>td>a{
+    color: rgb(146, 145, 145);
+    font-size: 14px;
+}
+
+
+.foot-mid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+    font-size: 12px;
+    color: rgb(146, 145, 145);
+}
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(88, 87, 87);
+    font-size: 14px;
+    font-weight: 600;
+}
+.app>a{
+    margin-left: 25px;
+    margin-top: 6px;
+}
+.app img{
+    width: 100px;
+    margin: 0;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.icons>a{
+    margin-top: 7px;
+}
+.icons>a> *{
+    margin-left: 25px;
+}
+.icons img{
+    border-radius: 50%;
+}
+
+
+.foot-bottom{
+    margin-bottom: 15px;
+}
+.foot-bottom>p{
+    color: rgb(146, 145, 145);
+    font-size: 14.8px;
+    padding-inline: 10px;
+}
+
+
+.designed-by{
+    text-align: center;
+    padding: 8px 23px;
+    background-color: rgb(243, 243, 226);
+}
+
+
+@media(max-width: 1172px){
+    .navigationbar{
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-inline: 23px;
+    }
+    .navigationbar>*{
+        margin: 5px 0;
+    }
+    .vertical-line, .my-cart, .login{
+        display: none;
+    }
+    .login-icon{
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        padding: 0;
+    }
+    .user-icon{
+        font-size: 48px!important;
+        font-weight: 800!important;
+        width: 45px;
+        height: 44.3px;
+    }
+    .search-div{
+        order: 1;
+        min-width: 77%;
+        flex: 1 1 auto;
+    }
+    .search-icon{
+        max-width: fit-content;
+    }
+    .search-input{
+        flex: 1 1 auto;
+    }
+
+
+    .scroll-banner> a> img{
+        width: 200px;
+    }
+
+    .foot-top{
+        grid-template-columns: 1fr;
+    }
+    .left>table{
+        margin-bottom: 25px;
+    }
+    .foot-mid{
+        grid-template-columns: 1fr;
+    }
+    .foot-mid> :nth-child(n+2){
+        margin-top: 10px;
+    }
+    .app, .icons{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .copyright{
+        padding-inline: 10px;
+        text-align: center;
+    }
+    .foot-mid {
+        margin-bottom: 10px;
+    }
+    .app>a, .app>div{
+        margin-inline: 5px;
+    }
+    .icons>a> *{
+        margin-inline: 5px;
+    }
+}
+
+@media (max-width: 860px){
+    .div-center-1{
+        width: 91%;
+    }
+    .div-center-2{
+        width: 89%;
+    }
+    .div-center-3{
+        width: 95.3%;
+    }
+    .categories{
+        /* position: relative;
+        z-index: -1;
+        margin-top: -35px; */
+        padding: 0 3px 0 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .foot{
+        margin-top: 35px;
+    }
+    .foot-top{
+        margin-bottom: 25px;
+    }
+    .foot-bottom>p{
+        text-align: center;
+    }
+}
